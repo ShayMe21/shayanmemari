@@ -1,0 +1,97 @@
+.row {
+  display: table;
+  position: relative;
+  margin: 0 auto;
+  width: 750px;
+}
+
+.tile {
+  background-color: #fff;
+  border-radius: 52px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 8px;
+  height: 96px;
+  text-align: center;
+  outline: none;
+  width: 180px;
+}
+
+.tile>span {
+  color: #444;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-top: calc((96px / 2) - (24px / 2));
+}
+
+.tile:focus, .tile:hover {
+  border-color: transparent;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.tile:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tile:focus {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(238, 0, 102, 0.3);
+}
+
+.tile:active {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.tile>svg, .tile>img {
+  display: block;
+  vertical-align: middle;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+  margin-top: calc((96px / 2) - (48px / 2));
+}
+
+.tile>svg {
+  fill: #fff;
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 767px) {    /* Smartphones */
+
+	#social_Media {
+		margin: 0px;
+		width: 100vw;
+	}
+	
+   .tile {
+   		margin: 4px 2px;
+    	width: 25%;
+   }
+   
+   .tile>span {
+    	font-size: calc(24px * 0.8);
+    	line-height: calc(24px * 0.8);
+    	width: 100%;
+   }
+  
+   .tile>svg {
+    	height: calc(48px * 0.75);
+    	margin-top: calc((96px / 2) - ((48px * 0.75) / 2));
+   }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "shayan",
+  "version": "2.0.0",
+  "description": "Shayan Memari personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShayMe21/shayanmemari.git"
+  },
+  "keywords": [
+    "Shayan",
+    "Memari",
+    "Developer",
+    "portfolio",
+    "site"
+  ],
+  "author": "Shayan Memari",
+  "license": "ISC",
+  "homepage": "www.shayanmemari.pro",
+  "devDependencies": {
+    "postcss": "^6.0.16",
+    "webpack": "^3.10.0"
+  }
+}

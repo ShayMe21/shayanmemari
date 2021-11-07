@@ -1,0 +1,478 @@
+body {
+	color: #3e3e3e;
+	font-family: 'Roboto', sans-serif;
+	font-kerning: initial;
+	font-size: 12px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: inherit;
+	word-wrap: break-word;
+	background-color: black;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#typed {
+	color: rgb(44, 209, 44);
+	font-size: 1.6em;
+	font-family: 'Oswald', sans-serif;
+}
+
+#under_developement {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: rgb(234, 208, 62);
+	text-align: center;
+	z-index: 100;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-top: 50px;
+	letter-spacing: 5px;
+	font-size: 1.3em;
+	font-weight: 800;
+	text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+#warning-message {
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	text-align: center;
+	z-index: 100;
+	text-transform: uppercase;
+	padding: 10px;
+	letter-spacing: 5px;
+	font-size: 1.3em;
+	font-weight: 800;
+	text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+#introText {
+	width: 50%;
+	margin: 0 auto;
+	max-width: 480px;
+	top: -20%;
+}
+
+
+/* See More icon */
+
+.seeMore {
+	display: inline-block;
+	width: 55px;
+	height: 28px;
+	background: url(../images/seeMoreArrow.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	cursor: pointer;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-10px);
+	}
+	60% {
+		transform: translateY(-3px);
+	}
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+	}
+	60% {
+		-webkit-transform: translateY(-3px);
+	}
+}
+
+@-moz-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+	}
+	40% {
+		-moz-transform: translateY(-10px);
+	}
+	60% {
+		-moz-transform: translateY(-3px);
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: white;
+}
+
+h1,
+h2 {
+	font-family: 'Oswald', sans-serif;
+}
+
+.text {
+	color: white;
+}
+
+.cpright-footer {
+	margin-top: 2em;
+	min-height: 96px;
+	padding: 2em 0;
+	text-align: center;
+	width: 100%;
+}
+
+.section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.slide {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#page1 {
+	background-image: url(../images/code12.jpg);
+}
+
+#page2 {
+	padding-bottom: 0px !important;
+}
+
+.cpright-footer span {
+	color: #e4e4e4;
+}
+
+.cpright-footer span:before {
+	content: "•";
+	padding: 0 1em;
+}
+
+.cpright-footer span:nth-child(1):before {
+	content: "";
+}
+
+.separator {
+	width: 100%;
+	text-align: center;
+	font-size: 125%;
+	color: #e1e1e1;
+	line-height: 50px;
+	height: 50px;
+}
+
+#menu {
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	z-index: 70;
+	position: fixed;
+	display: block;
+}
+
+.fp-section {
+	overflow: hidden;
+}
+
+#fp-nav ul li {
+	margin: 20px 0px !important;
+}
+
+.fp-slidesNav ul li {
+	margin: 0px 20px !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: #7eff00;
+	border: 3px solid #7eff00;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+	height: 15px;
+	width: 15px;
+	margin: -6px 0 0 -6px;
+	border-radius: 100%;
+}
+
+.fp-controlArrow.fp-next {
+	right: 20%;
+	border-width: 25px 0 25px 30px;
+	/* Top-Right-Bottom-Left*/
+}
+
+.fp-controlArrow.fp-prev {
+	left: 20%;
+	border-width: 25px 30px 25px 0;
+}
+
+.fp-controlArrow {
+	top: 53%;
+}
+
+
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+	padding: 0px;
+}
+
+.navbar-brand>img {
+	height: 100%;
+	padding: 5px;
+	width: auto;
+	border-radius: 100px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.navbar {
+	color: white;
+	background: transparent;
+}
+
+.navbar-default {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #e2e2e2;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	border-bottom: 1px solid red;
+	color: #7eff00;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+	border-bottom: 1px solid red;
+	color: #7eff00;
+	outline: none;
+}
+
+#navbar_menu {
+	background-color: #282828;
+}
+
+
+/* PORTFOLIO PAGES */
+
+.project-box {
+	background-color: rgba(40, 40, 40, 1);
+	padding: 20px 20px 20px 20px;
+	margin: auto;
+	width: 50%;
+}
+
+.portfolio_image {
+	max-width: 720px;
+	padding: 0 0 20px 0;
+	width: 45vw;
+}
+
+.project_details {
+	text-align: left;
+}
+
+.project_list_details {
+	font-size: 1.4em;
+	list-style: none;
+	margin-left: -20px;
+}
+
+.project_list_details li strong {
+	display: inline-block;
+	min-width: 125px;
+}
+
+.project_title {
+	border-bottom: 1px solid #f3f3f3;
+	margin-bottom: 19px;
+	margin-left: 20px;
+}
+
+.project_title span {
+	font-family: 'Oswald', open sans;
+	font-size: 1.6em;
+}
+
+.project_description {
+	text-align: left;
+}
+
+.project_description_text {
+	font-size: 1.4em;
+	margin-left: 20px;
+}
+
+#contact_form {
+	margin: 0px;
+	width: 80vw;
+	display: inline-block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+	/* Smartphones */
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.8em;
+	}
+	h3 {
+		font-size: 1.4em;
+	}
+	#introText {
+		top: -24%;
+		width: 75%;
+	}
+	#introText>div>h1 {
+		padding: 5px !important;
+	}
+	#under_developement {
+		font-size: 1.0em;
+	}
+	.portfolio_image {
+		max-width: 100%;
+		padding: 0 20px 20px 20px;
+		width: 100vw;
+	}
+	.fp-controlArrow.fp-next {
+		right: 5px;
+		border-width: 15px 0 15px 15px;
+	}
+	.fp-controlArrow.fp-prev {
+		left: 5px;
+		border-width: 15px 15px 15px 0;
+	}
+	.project-box {
+		width: 100%;
+		padding: 10px 20px 25px 20px;
+	}
+	#project1 {
+		background-image: none;
+	}
+	#project2 {
+		background-image: none;
+	}
+	.project-title {
+		font-size: 1.2em;
+	}
+	.project_list_details {
+		font-size: 1.2em;
+	}
+	.project_description_text {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	/* Tablets */
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.8em;
+	}
+	h3 {
+		font-size: 1.4em;
+	}
+	#introText {
+		top: -24%;
+		width: 50%;
+	}
+	#introText>div>h1 {
+		padding: 5px !important;
+	}
+	#under_developement {
+		font-size: 1.2em;
+	}
+	.portfolio_image {
+		max-width: 100%;
+		padding: 0px 20px 20px 20px;
+		width: 100vw;
+	}
+	.fp-controlArrow {
+		top: 45%;
+	}
+	.fp-controlArrow.fp-next {
+		right: 5px;
+		border-width: 20px 0 20px 20px;
+	}
+	.fp-controlArrow.fp-prev {
+		left: 5px;
+		border-width: 20px 20px 20px 0;
+	}
+	.project-box {
+		width: 100%;
+		padding: 10px 20px 25px 20px;
+	}
+	#topNavbarList {
+		font-size: 1.2em;
+	}
+	#project1 {
+		background-image: none;
+	}
+	#project2 {
+		background-image: none;
+	}
+}
+
+.viewLiveButton {
+	margin-bottom: 10px;
+}
