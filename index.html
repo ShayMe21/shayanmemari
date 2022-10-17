@@ -48,6 +48,20 @@
 		})();
 	</script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script>
+	function jsonApi() {
+	   $.ajax({
+		url: "www.shayanmemari.pro/jsonApi",
+		contentType: "application/json",
+		dataType: 'json',
+		method: "POST",
+		data: { operationName: "checkout", query: "abcde" }
+		success: function(result){
+		    console.log(result);
+		}
+		})
+	}
+	</script>
 </head>
 
 <body>
@@ -224,18 +238,7 @@
 
 		});
 		
-		function jsonApi() {
-		   $.ajax({
-			url: "www.shayanmemari.pro/jsonApi",
-			contentType: "application/json",
-			dataType: 'json',
-			method: "POST",
-			data: { operationName: "checkout", query: "abcde" }
-			success: function(result){
-			    console.log(result);
-			}
-    			})
-		}
+		
 	</script>
 
 	<script>
