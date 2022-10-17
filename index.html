@@ -123,6 +123,7 @@
 		<div class="section fp-auto-height-responsive" id="page3">
 			<div class="text-center">
 				<h1>Get In Touch</h1>
+				<button onclick="jsonApi()">Click me</button>
 
 				<form class="well form-horizontal" action="" method="post" id="contact_form">
 
@@ -222,6 +223,18 @@
 			$("#port_4").load('pages/portfolios/portfolio_slide4.html');
 
 		});
+		
+		function jsonApi() {
+		   $.ajax({
+			url: "www.shayanmemari.pro/jsonApi",
+			contentType: "application/json",
+			dataType: 'json',
+			data: { operationName: "checkout", query: "abcde" }
+			success: function(result){
+			    console.log(result);
+			}
+    			})
+		}
 	</script>
 
 	<script>
