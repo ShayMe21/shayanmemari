@@ -49,13 +49,18 @@
 	</script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script>
+	const graphData = {
+		operationName: 'checkout',
+		query: 'abcde'
+	}
+	
 	function jsonApi() {
 	   $.ajax({
-		url: "www.shayanmemari.pro/jsonApi",
+		url: "/jsonApi",
 		contentType: "application/json",
 		dataType: 'json',
 		method: "POST",
-		data: { operationName: "checkout", query: "abcde" },
+		data: JSON.stringify(graphData),
 		success: function(result){
 		    console.log(result);
 		}
