@@ -54,18 +54,34 @@
 		query: 'abcde'
 	}
 	
+	const graphData2 = {
+		operationName: 'somethingelse',
+		query: 'abcde'
+	}
+	
 	function jsonApi() {
 	   $.ajax({
 		url: "/jsonApi",
 		contentType: "application/json",
 		dataType: 'json',
 		method: "POST",
-		data: JSON.stringify(graphData),
+		data: JSON.stringify(graphData2),
 		success: function(result){
 		    console.log(result);
 		}
-		})
-	}
+	    });
+		
+		$.ajax({
+            url: "/jsonApi",
+            contentType: "application/json",
+            dataType: 'json',
+            method: "POST",
+            data: JSON.stringify(graphData),
+            success: function(result){
+                console.log(result);
+            }
+		});
+}
 	</script>
 </head>
 
