@@ -48,54 +48,12 @@
 		})();
 	</script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script>
-	const graphData = {
-		operationName: 'checkout',
-		query: 'abcde'
-	}
-	
-	const graphData2 = {
-		operationName: 'somethingelse',
-		query: 'abcde'
-	}
-	
-	function jsonApi() {
-	   $.ajax({
-		url: "/jsonApi",
-		contentType: "application/json",
-		dataType: 'json',
-		method: "POST",
-		data: JSON.stringify(graphData2),
-		success: function(result){
-		    console.log(result);
-		}
-	    });
-		
-		$.ajax({
-            url: "/jsonApi",
-            contentType: "application/json",
-            dataType: 'json',
-            method: "POST",
-            data: JSON.stringify(graphData),
-            success: function(result){
-                console.log(result);
-            }
-		});
-}
-	</script>
 </head>
 
 <body>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" defer>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" defer>
-	<!-- <script>
-                  !function (a, b, c, d, e, f) {
-                      a.ddjskey = e;
-                      a.ddoptions = f || null;
-                      var m = b.createElement(c), n = b.getElementsByTagName(c)[0];
-                      m.async = 1, m.src = d, n.parentNode.insertBefore(m, n);
-                  }(window, document, "script", "https://js.datadome.co/tags.js","111384F6A5D99C39F3CADA490E382B", { ajaxListenerPath : 'jsonplaceholder.typicode.com/todos/1' });
-		</script> -->
+
 	<div id="menu">
 		<div id="topNavbarMenu"></div>
 	</div>
@@ -118,7 +76,7 @@
 				<div class="type-wrap">
 					<div id="typed-skills">
 						<span>Web/Mobile Developer</span>
-						<p>Web Security Consultant</p>
+						<p>Web Security Enthusiast</p>
 						<p>Young and Motivated</p>
 						<p>Aspiring Entrepreneur</p>
 						<p>Occasional Hacker</p>
@@ -127,7 +85,7 @@
 				</div>
 
 				<div>
-					<h3>Welcome to My Website!</h3>
+					<h3>Welcome!</h3>
 				</div>
 			</div>
 
@@ -158,7 +116,6 @@
 		<div class="section fp-auto-height-responsive" id="page3">
 			<div class="text-center">
 				<h1>Get In Touch</h1>
-				<button onclick="jsonApi()">Click me</button>
 
 				<form class="well form-horizontal" action="" method="post" id="contact_form">
 
@@ -241,7 +198,7 @@
 				</div>
 
 				<div class="cpright-footer">
-					<span> © 2017 Shayan Memari</span>
+					<span> © 2023 Shayan Memari</span>
 				</div>
 
 			</div>
@@ -258,8 +215,8 @@
 			$("#port_4").load('pages/portfolios/portfolio_slide4.html');
 
 		});
-		
-		
+
+
 	</script>
 
 	<script>
